@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento Esportivo Fut7/Vôlei </h1>
+        <form id="bookingForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <!--seção dos esportes-->
+            <label class="serv">Serviços</label>
+           <select name="servicos" class="bookingForm">
+           <option value="" selected=>Selecione um serviço</option>
+           <option>Society Fut7-- R$60,00</option>
+           <option>Vôlei -- R$50,00</option> </select>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+             
+            <button type="submit">Agendar</button>
+            <button type="submit">Ver Agendamentos</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
